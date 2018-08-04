@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Pheramor</string>
+    <string name="action_settings">Settings</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="zipcode_hint">Zipcode</string>
+    <string name="height_hint">Height (cm)</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender_label">Gender</string>
+    <string name="dob_label">Date of Birth</string>
+    <string name="preferred_gender_label">Preferred Gender</string>
+    <string name="preferred_age_range_label">Preferred Age Range (%.0f - %.0f)</string>
+    <string name="dob_hint">1/26/1992</string>
+    <string name="race_label">Race (Optional)</string>
+    <string name="religion_label">Religion (Optional)</string>
+    <string name="profile_picture_label">Profile Picture</string>
+    <string name="summary_name">Name: %s</string>
+    <string name="summary_height">Height: %s cm</string>
+    <string name="summary_gender">Gender: %s</string>
+    <string name="summary_dob">Date of Birth: %s</string>
+    <string name="summary_preferred_gender">Preferred Gender: %s</string>
+    <string name="summary_preferred_age_range">Preferred Age Range: %.0f - %.0f</string>
+    <string name="summary_race">Race: %s</string>
+    <string name="summary_religion">Religion: %s</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
