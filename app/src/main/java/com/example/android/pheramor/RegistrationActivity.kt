@@ -5,10 +5,11 @@ import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
+import com.example.android.pheramor.ProfilePictureFragment.OnProfilePictureUpdatedListener
 
 import kotlinx.android.synthetic.main.activity_registration.*
 
-class RegistrationActivity : AppCompatActivity() {
+class RegistrationActivity : AppCompatActivity(), OnProfilePictureUpdatedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +48,11 @@ class RegistrationActivity : AppCompatActivity() {
             fragment.isValid() -> pager.currentItem = pager.currentItem + 1 % pager.childCount
             else -> Toast.makeText(this, "Please fill out necessary fields", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    override fun onProfilePictureUpdated() {
+        val fragment = pager.adapter!!.instantiateItem(pager, 6) as SummaryFragment
+        fragment.setup()
     }
 
 }

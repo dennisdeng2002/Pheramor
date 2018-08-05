@@ -45,7 +45,7 @@ class SummaryFragment : BaseFragment() {
             summary_religion_text_view.visibility = View.INVISIBLE
         }
 
-        signup_button.setOnClickListener {
+        signup_button.setOnClickListener { _ ->
             registrationService.register()
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
